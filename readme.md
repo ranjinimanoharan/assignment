@@ -62,7 +62,7 @@ kind: Deployment
 metadata:
   labels:
     app: tomcat
-    namespace: test
+  namespace: test
   name: tomcat
 spec:
   replicas: 1
@@ -102,7 +102,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
-    namespace: test
+  namespace: test
   name: nginx
 spec:
   replicas: 1
