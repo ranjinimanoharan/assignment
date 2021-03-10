@@ -9,7 +9,7 @@
 
 **Create Docker image**
 
-First we need to a docker image using the sample.war file provided here:
+First, we need to create a docker image using the sample.war file provided here:
 https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/
 
 **Dockerfile**
