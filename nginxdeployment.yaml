@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: nginx
+    namespace: test
   name: nginx
 spec:
   replicas: 1
