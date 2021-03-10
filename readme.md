@@ -32,7 +32,7 @@ docker push ranjinimanoharan/assignment:app1
 ```
 Now, docker image is ready for our sample app deployment. 
 
-# Create kubernets deployment
+# Create kubernetes deployment
 Before proceeding with Kubernetes deployment, make sure you have `minikube` and `kubectl` running in the VM.
 ```
 minikube status
