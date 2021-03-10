@@ -44,10 +44,15 @@ minikube runs a single-node Kubernetes cluster on your personal computer (includ
 
 *Namespace.yaml*
 
+```
 apiVersion: v1
+
 kind: Namespace
+
 metadata:
+
   name: test
+```
   
 Create namespace using `kubectl apply -f namespace.yaml` 
 
