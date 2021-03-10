@@ -40,15 +40,27 @@ kubectl config-view
 ```
 minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) and VMs. It is suitable only for development and testing purpose.
 
-*Kubernetes deployment file*
+**Create Namespaces**
 
-**tomcatdeployment.yaml**
+*Namespace.yaml*
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: test
+  
+Create namespace using `kubectl apply -f namespace.yaml` 
+
+**Kubernetes deployment file**
+
+*tomcatdeployment.yaml*
 ```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     app: tomcat
+    namespace: test
   name: tomcat
 spec:
   replicas: 1
@@ -81,13 +93,14 @@ kubectl get deployment
 
 Now, lets move on to deploy a nginx to minikube and serve static content like a simple `helloworld!`.
 
-**nginxdeployment.yaml**
+*nginxdeployment.yaml*
 ```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     app: nginx
+    namespace: test
   name: nginx
 spec:
   replicas: 1
