@@ -46,11 +46,8 @@ minikube runs a single-node Kubernetes cluster on your personal computer (includ
 
 ```
 apiVersion: v1
-
 kind: Namespace
-
 metadata:
-
   name: test
 ```
   
