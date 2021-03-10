@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: tomcat
-    namespace: test
+  namespace: test
   name: tomcat
 spec:
   replicas: 1
