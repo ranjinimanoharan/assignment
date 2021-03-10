@@ -123,7 +123,7 @@ spec:
           name: nginx
 ```
 
-Now, we have the nginx server up and running inside a container. Here, `hostport` is used to expose the container to the outside world. 
+Now, we have the nginx server up and running inside a container. Here, `hostport` is used to expose the container to outside. 
 
 Create kubernetes deployment using:
 ```
