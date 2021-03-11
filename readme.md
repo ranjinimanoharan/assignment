@@ -7,8 +7,7 @@
 - Bind nginx/apache to hostport 8080
 - Include simple "hello world" in index.html of nginx
 
-**Create Docker image**
-
+# Create Docker image
 First, we need to create a docker image using the sample.war file provided here:
 https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/
 
@@ -38,9 +37,11 @@ Before proceeding with Kubernetes deployment, make sure you have `minikube` and 
 minikube status
 kubectl config-view
 ```
-minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) and VMs. It is suitable only for development and testing purpose.
+Minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) and VMs. It is suitable only for development and testing purpose.
 
 **Create Namespaces**
+
+Namespaces provide a logical separation of cluster resources between multiple users, teams, projects, and even customers. Namespaces are how to divide cluster resources between multiple users (via resource quota).
 
 *Namespace.yaml*
 
